@@ -1,9 +1,23 @@
-li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
+body {
+  background-color: bisque;
+  padding-bottom: 30px;
+  text-align: center;
+}
   
+form {
+  display: inline-block;
+}
+
+ul {
+  display: table;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 30px;
+  text-align: center;
+}
   .label {
     font-weight: bold;
   }

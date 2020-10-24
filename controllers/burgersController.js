@@ -14,8 +14,10 @@ router.get("/", function(req,res){
     });
 });
 
+//problem with obtaining req.body.burger_name
 router.post("/api/burgers",function(req,res) {
-    burger.insertOne(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], function(result) {
+    console.log(req.body);
+    burger.insertOne(["burger_name", "devoured"], [req.body.burger_name, 0], function(result) {
         res.json({ id: result.insertId })
     });
 });
@@ -26,7 +28,7 @@ router.put("/api/burgers/:id", function(req, res) {
 
     burger.updateONE(
         {
-            deveoured: req.body.devoured
+            devoured: req.body.devoured
         },
         condition,
         function(result) {
