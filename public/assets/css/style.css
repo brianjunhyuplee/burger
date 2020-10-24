@@ -4,6 +4,10 @@ body {
   text-align: center;
 }
   
+img {
+  text-align: center;
+  width: 20%;
+}
 form {
   display: inline-block;
 }

@@ -1,5 +1,5 @@
-<h1>Burgers APP</h1>
-
+<h1>Butter my Buns</h1>
+<img src = "/assets/images/burger.png" alt = "image of a burger">
 <h2>Add a burger to be eaten</h2>
 <form class="create-form">
 
@@ -18,7 +18,7 @@
 </form>
 
 <h2>Burgers to be eaten</h2>
-
+<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
 <ul>
     {{#each burgers}}
         {{#unless devoured}}
@@ -28,7 +28,8 @@
 </ul>
 
 <h2>Already consumed burgers</h2>
-
+<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<hr>
 <ul>
      {{#each burgers}}
         {{#if devoured}}
